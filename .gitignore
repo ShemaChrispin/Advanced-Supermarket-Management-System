@@ -1,0 +1,20 @@
+# Ignore compiled class files
+*.class
+
+# Ignore IDE specific folders and files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Ignore build output folders
+bin/
+out/
+
+# Keep the JAR for submission as requested by lecturer
+!SupermarketSystem.jar
+
+# Ignore OS generated files
+Thumbs.db
+.DS_Store

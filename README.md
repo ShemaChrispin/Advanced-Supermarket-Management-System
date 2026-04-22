@@ -10,26 +10,33 @@ A robust, OOP-based inventory and sales management system for supermarkets. This
 
 ## 🛠️ How to Run
 
-### Option 1: Using the JAR file (Requires Java 17+)
-Download the `SupermarketSystem.jar` and run:
+### Option 1: The Manual Way (Standard Java)
+If you have Java installed locally, you can run the pre-built JAR file:
+1. Download the project ZIP and extract it.
+2. Open a terminal in the folder and run:
 ```bash
 java -jar SupermarketSystem.jar
 ```
 
-### Option 2: Using Docker (Requires Docker)
-Build the image and run it in interactive mode:
+### Option 2: The Docker Way (Professional)
+Run the system in a container without needing to install Java locally (requires Docker Desktop):
+1. Build the Image:
 ```bash
-# Build the image
-docker build -t supermarket-system .
-
-# Run the container (Interactive mode is required for input)
-docker run -it supermarket-system
+docker build -t supermarket-app .
+```
+2. Run the Container (The `-it` flag is required for interactive input):
+```bash
+docker run -it supermarket-app
 ```
 
-### Option 3: Manual Compilation
+### Option 3: GitHub Codespaces (Run in Browser)
+Run the project directly in your browser without downloading anything:
+1. On this GitHub repository page, click the green **Code** button.
+2. Select the **Codespaces** tab.
+3. Click **Create codespace on main**.
+4. Once the environment loads, type the following in the terminal at the bottom:
 ```bash
-javac *.java
-java SupermarketSystem
+java -jar SupermarketSystem.jar
 ```
 
 ## 📂 Submission Details
